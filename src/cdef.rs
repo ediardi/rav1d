@@ -712,7 +712,7 @@ impl Rav1dCdefDSPContext {
             self.fb[2] = bpc_fn!(cdef::decl_fn, 8 bpc, cdef_filter_4x4, sse4);
         }
 
-        #[cfg(target_arch = "x86_64")]
+        #[cfg(targetdsad_arch = "x86_64")]
         {
             if !flags.contains(CpuFlags::AVX2) {
                 return self;
