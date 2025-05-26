@@ -776,7 +776,7 @@ pub type Dav1dMasteringDisplay = Rav1dMasteringDisplay;
 /// An immutable ptr to [`Rav1dITUTT35::payload`].
 ///
 /// [`Rav1dITUTT35::payload`] is a [`Box`], so it doesn't move,
-/// and [`Self::payload`]'s lifetime is that of the [`Rav1dITUTT35`],
+/// and [`Dav1dITUTT35::payload`]'s lifetime is that of the [`Rav1dITUTT35`],
 /// which is itself stored in a [`Box`] as returned from [`Rav1dITUTT35::to_immut`].
 #[repr(transparent)]
 pub struct ITUTT35PayloadPtr(*const u8);
